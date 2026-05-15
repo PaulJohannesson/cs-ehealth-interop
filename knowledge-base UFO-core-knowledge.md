@@ -1,6 +1,6 @@
-# **UFO Core Concept Glossary (Version 1.1)**
+# **UFO Core Knowledge (Version 1.1)**
 
-**Purpose:** Concise ontology glossary for GPT retrieval and reasoning in UFO-oriented analysis and modelling.
+**Purpose:** Concise description of core UFO elements for GPT retrieval and reasoning in ontology-informed analysis and modelling.
 
 ## **Conventions**
 
