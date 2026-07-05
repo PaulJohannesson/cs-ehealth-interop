@@ -1,1 +1,1 @@
-Hur reagerade den katolska kyrkan på den augustinska trosbekännelsen? 
+Hur förhåller sig Påvens encyklika om AI gentemot den encyklika som Leo XIII utfärdade? 
