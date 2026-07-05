@@ -1,1 +1,1 @@
-Hur har techindustrin reagerat på Påbens encyklika om om AI? 
+Kan du jämföra Dario Amodeis tänkande med det som finns uttryckt i Påvens encyklika om AI? 
