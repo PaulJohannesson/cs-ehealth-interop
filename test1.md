@@ -1,1 +1,1 @@
-sammanfatta leo den trettondes encyklika 
+Hur har techindustrin reagerat på Påbens encyklika om om AI? 
