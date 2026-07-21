@@ -1,1 +1,1 @@
-Kan du jämföra Max Tegmarks tänkande med det som finns uttryckt i Påvens encyklika om AI? 
+Kan du jämföra Max Tegmarks tänkande med huvudbudskapet i den ovanstående teorin? 
