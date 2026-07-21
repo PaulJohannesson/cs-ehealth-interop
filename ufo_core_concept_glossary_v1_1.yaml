@@ -1,0 +1,479 @@
+knowledge_file:
+  title: UFO Core Concept Glossary
+  version: '1.1'
+  purpose: Concise ontology glossary for GPT retrieval and reasoning in UFO-oriented analysis and modelling.
+  conventions:
+  - Terms are listed in alphabetical order.
+  - Each entry has one canonical term.
+  - Definitions are short and operational.
+  - The term 'Phase' is used, not 'Face'.
+  - Moment is a dependent endurant.
+  - Plan Description is treated as a subtype of Normative Description.
+  concepts:
+  - term: Category
+    canonical_term: Category
+    type: Universal
+    subtype: Non-sortal, rigid
+    definition: A Category is a rigid non-sortal universal that captures essential properties shared by instances of different
+      identity-supplying types, without supplying an identity criterion of its own.
+    key_distinction: Unlike a Kind, a Category does not provide identity conditions.
+    parent: Universal
+    contrasts_with:
+    - Kind
+    examples:
+    - Physical Object
+  - term: Constituent
+    canonical_term: Constituent
+    type: Situation-related notion
+    subtype: Constitutive part
+    definition: A Constituent is something that forms part of a Situation.
+    key_distinction: A Constituent is not a basic ontological category like Endurant or Perdurant, but a role something plays
+      within a Situation.
+    parent: Situation-related notion
+    contrasts_with:
+    - Situation
+    - Situation Type
+    examples:
+    - Greta in the jar-opening case
+    - The medicine jar
+    - Greta's finger strength
+    - A plan for opening the jar
+  - term: Endurant
+    canonical_term: Endurant
+    type: Individual
+    subtype: Wholly present entity
+    definition: An Endurant is an individual that is wholly present whenever it exists.
+    key_distinction: Unlike a Perdurant, an Endurant does not unfold through temporal parts in the same way as an event or
+      process.
+    parent: Individual
+    contrasts_with:
+    - Perdurant
+    examples:
+    - A person
+    - A hospital
+    - A medicine jar
+  - term: Individual
+    canonical_term: Individual
+    type: Most general ontological category
+    subtype: Particular
+    definition: An Individual is a particular entity that exists as a single instance and can instantiate Universals.
+    key_distinction: An Individual is particular, whereas a Universal is general.
+    parent: null
+    contrasts_with:
+    - Universal
+    examples:
+    - Greta
+    - This specific jar
+    - This treatment event
+  - term: Intrinsic Moment
+    canonical_term: Intrinsic Moment
+    type: Moment
+    subtype: Dependent on a single bearer
+    definition: An Intrinsic Moment is a dependent entity that inheres in a single bearer and cannot exist independently of
+      that bearer.
+    key_distinction: Intrinsic Moments depend on one bearer, whereas Relators connect multiple bearers.
+    parent: Moment
+    subtypes:
+    - Mode
+    - Quality
+    contrasts_with:
+    - Relator
+    examples:
+    - A person's pain
+    - Greta's finger strength
+    - The colour of the jar
+  - term: Kind
+    canonical_term: Kind
+    type: Universal
+    subtype: Sortal, rigid
+    definition: A Kind is a rigid sortal universal that provides an identity principle for its instances.
+    key_distinction: A Kind tells us what an entity fundamentally is and supplies identity criteria.
+    parent: Universal
+    contrasts_with:
+    - Category
+    - Subkind
+    - Role
+    - Phase
+    examples:
+    - Person
+    - Organisation
+    - Jar
+  - term: Mode
+    canonical_term: Mode
+    type: Intrinsic Moment
+    subtype: Non-qualitative dependent entity
+    definition: A Mode is an Intrinsic Moment that is not naturally represented in a value space in the way Qualities are.
+    key_distinction: A Quality is typically measurable in a quality space, whereas a Mode is usually not.
+    parent: Intrinsic Moment
+    contrasts_with:
+    - Quality
+    examples:
+    - Greta's finger strength
+    - A person's belief
+    - A system's fragility
+  - term: Moment
+    canonical_term: Moment
+    type: Dependent Endurant
+    subtype: Existentially dependent entity
+    definition: A Moment is a dependent entity that cannot exist on its own but must inhere in or depend on other entities.
+    key_distinction: Moments are contrasted with Substantials, which can exist independently.
+    parent: Endurant
+    subtypes:
+    - Intrinsic Moment
+    - Relator
+    contrasts_with:
+    - Substantial
+    - Perdurant
+    examples:
+    - A colour
+    - A capacity
+    - A marriage
+    - A legal obligation
+  - term: Normative Description
+    canonical_term: Normative Description
+    type: Social Object
+    subtype: Description with normative force
+    definition: A Normative Description is a description that defines norms, rules, permissions, obligations, prohibitions,
+      or other normative structures recognized in a social context.
+    key_distinction: It does not merely describe reality, but specifies how agents ought, may, or must act, or how institutional
+      reality is structured.
+    parent: Social Object
+    contrasts_with:
+    - Proposition
+    - Plan Description
+    examples:
+    - A law
+    - A policy
+    - A contract
+    - A regulation
+  - term: Perdurant
+    canonical_term: Perdurant
+    type: Individual
+    subtype: Temporally extended entity
+    definition: A Perdurant is an individual that unfolds in time and has temporal parts.
+    key_distinction: Unlike an Endurant, a Perdurant is not wholly present at each moment of its existence.
+    parent: Individual
+    contrasts_with:
+    - Endurant
+    - Moment
+    examples:
+    - A surgery
+    - A meeting
+    - A care process
+    - A movement
+  - term: Phase
+    canonical_term: Phase
+    type: Universal
+    subtype: Sortal, anti-rigid
+    definition: A Phase is an anti-rigid sortal universal that classifies entities based on intrinsic but contingent conditions.
+    key_distinction: An entity can enter or leave a Phase while remaining the same individual. A Phase differs from a Role,
+      which depends on relational context.
+    parent: Universal
+    contrasts_with:
+    - Role
+    - PhaseMixin
+    examples:
+    - Child
+    - Adult
+    - Broken Device
+  - term: PhaseMixin
+    canonical_term: PhaseMixin
+    type: Universal
+    subtype: Non-sortal, anti-rigid
+    definition: A PhaseMixin is an anti-rigid non-sortal universal whose instances may belong to different identity-supplying
+      types, but which is still based on intrinsic contingent conditions rather than relational ones.
+    key_distinction: Like a Phase, it is based on contingent intrinsic conditions; unlike a Phase, it does not assume one
+      common identity principle for all instances.
+    parent: Universal
+    contrasts_with:
+    - Phase
+    - RoleMixin
+    examples:
+    - Temporarily Disabled Entity
+  - term: Plan Description
+    canonical_term: Plan Description
+    type: Normative Description
+    subtype: Action-oriented description
+    definition: A Plan Description is a description of an intended course of action, typically specifying how an agent may
+      act in order to achieve some goal.
+    key_distinction: A Plan Description is action-oriented, whereas a Proposition describes a situation that may be satisfied
+      or not satisfied.
+    parent: Normative Description
+    contrasts_with:
+    - Proposition
+    examples:
+    - A treatment plan
+    - A procedure for opening a sealed container
+    - A workflow specification
+  - term: Proposition
+    canonical_term: Proposition
+    type: Abstract Object
+    subtype: Intentional content
+    definition: A Proposition is an abstract content that specifies a possible or desirable situation and can be satisfied
+      or not satisfied by reality.
+    key_distinction: A Proposition is not itself a concrete Situation; it is what a belief, desire, or goal is about.
+    parent: Abstract Object
+    contrasts_with:
+    - Situation
+    - Situation Type
+    - Plan Description
+    - Normative Description
+    examples:
+    - The medicine jar is open
+    - The patient has access to medication
+  - term: Quality
+    canonical_term: Quality
+    type: Intrinsic Moment
+    subtype: Value-space dependent entity
+    definition: A Quality is an Intrinsic Moment that can be located in a quality space and is typically measurable or characterizable
+      by values.
+    key_distinction: Unlike a Mode, a Quality is typically associated with dimensions such as colour, weight, temperature,
+      or height.
+    parent: Intrinsic Moment
+    contrasts_with:
+    - Mode
+    examples:
+    - The jar's weight
+    - Greta's height
+    - The lid's tightness
+  - term: Relator
+    canonical_term: Relator
+    type: Moment
+    subtype: Relationally dependent entity
+    definition: A Relator is a dependent entity that mediates a relation between two or more bearers.
+    key_distinction: A Relator depends on multiple entities and grounds a material relation among them, whereas an Intrinsic
+      Moment depends on only one bearer.
+    parent: Moment
+    contrasts_with:
+    - Intrinsic Moment
+    examples:
+    - A marriage
+    - An employment relation
+    - A treatment agreement
+  - term: Role
+    canonical_term: Role
+    type: Universal
+    subtype: Sortal, anti-rigid
+    definition: A Role is an anti-rigid sortal universal that an entity instantiates only in a relational context.
+    key_distinction: A Role depends on external relations, whereas a Phase depends on intrinsic contingent conditions.
+    parent: Universal
+    contrasts_with:
+    - Phase
+    - RoleMixin
+    examples:
+    - Student
+    - Patient
+    - Customer
+    - Supplier
+  - term: RoleMixin
+    canonical_term: RoleMixin
+    type: Universal
+    subtype: Non-sortal, anti-rigid
+    definition: A RoleMixin is an anti-rigid non-sortal universal that depends on relational context and can be instantiated
+      by entities with different identity principles.
+    key_distinction: It is the non-sortal counterpart of a Role.
+    parent: Universal
+    contrasts_with:
+    - Role
+    - PhaseMixin
+    examples:
+    - Customer-like Party
+    - Insured Party
+  - term: Scene
+    canonical_term: Scene
+    type: Temporally Extended Whole
+    subtype: Whole composed of temporally related situations
+    definition: A Scene is a temporally extended whole composed of temporally related Situations.
+    key_distinction: A Situation is a particular configuration treated as a whole; a Scene unifies multiple such configurations
+      into a larger whole across time.
+    parent: Temporally Extended Whole
+    contrasts_with:
+    - Situation
+    - Situation Type
+    examples:
+    - A medical consultation scene
+    - A patient discharge scene
+    - A jar-opening attempt from start to finish
+  - term: Situation
+    canonical_term: Situation
+    type: Individual
+    subtype: Concrete complex
+    definition: A Situation is a concrete complex of entities, properties, and relations that obtains in reality and can be
+      grasped as a whole.
+    key_distinction: A Situation is concrete and particular, whereas a Situation Type is general and a Proposition is abstract.
+    parent: Individual
+    contrasts_with:
+    - Situation Type
+    - Proposition
+    - Scene
+    examples:
+    - Greta holding a closed jar while lacking the strength to open it
+  - term: Situation Type
+    canonical_term: Situation Type
+    type: Universal
+    subtype: Universal over situations
+    definition: A Situation Type is a universal whose instances are Situations sharing a certain structure.
+    key_distinction: A Situation Type is general, whereas a Situation is particular.
+    parent: Universal
+    contrasts_with:
+    - Situation
+    - Proposition
+    examples:
+    - Person unable to open container
+    - Patient undergoing examination
+  - term: Subkind
+    canonical_term: Subkind
+    type: Universal
+    subtype: Sortal, rigid
+    definition: A Subkind is a rigid specialization of a Kind that inherits the identity principle of that Kind.
+    key_distinction: A Subkind refines a Kind without introducing a new identity criterion.
+    parent: Kind
+    contrasts_with:
+    - Kind
+    - Role
+    - Phase
+    examples:
+    - Woman as a subkind of Person
+    - Hospital as a subkind of Organisation
+  - term: Substantial
+    canonical_term: Substantial
+    type: Endurant
+    subtype: Existentially independent endurant
+    definition: A Substantial is an existentially independent Endurant, that is, an entity that can exist in its own right
+      rather than depending on another bearer.
+    key_distinction: A Substantial contrasts with a Moment, which depends on something else in order to exist.
+    parent: Endurant
+    contrasts_with:
+    - Moment
+    examples:
+    - A person
+    - An organisation
+    - A jar
+  - term: Universal
+    canonical_term: Universal
+    type: General ontological category
+    subtype: Repeatable type
+    definition: A Universal is a general type that can be instantiated by multiple Individuals.
+    key_distinction: A Universal is repeatable across many instances, whereas an Individual is a particular instance.
+    parent: null
+    contrasts_with:
+    - Individual
+    examples:
+    - Person
+    - Patient
+    - Situation Type
+    - Quality Type
+  relation_triples:
+  - subject: Category
+    predicate: is_a
+    object: Universal
+  - subject: Constituent
+    predicate: part_of
+    object: Situation
+  - subject: Endurant
+    predicate: is_a
+    object: Individual
+  - subject: Intrinsic Moment
+    predicate: is_a
+    object: Moment
+  - subject: Kind
+    predicate: is_a
+    object: Universal
+  - subject: Mode
+    predicate: is_a
+    object: Intrinsic Moment
+  - subject: Moment
+    predicate: is_a
+    object: Endurant
+  - subject: Normative Description
+    predicate: is_a
+    object: Social Object
+  - subject: Perdurant
+    predicate: is_a
+    object: Individual
+  - subject: Phase
+    predicate: is_a
+    object: Universal
+  - subject: PhaseMixin
+    predicate: is_a
+    object: Universal
+  - subject: Plan Description
+    predicate: is_a
+    object: Normative Description
+  - subject: Proposition
+    predicate: is_a
+    object: Abstract Object
+  - subject: Quality
+    predicate: is_a
+    object: Intrinsic Moment
+  - subject: Relator
+    predicate: is_a
+    object: Moment
+  - subject: Role
+    predicate: is_a
+    object: Universal
+  - subject: RoleMixin
+    predicate: is_a
+    object: Universal
+  - subject: Scene
+    predicate: composed_of
+    object: Situation
+  - subject: Situation
+    predicate: is_a
+    object: Individual
+  - subject: Situation
+    predicate: has_part
+    object: Constituent
+  - subject: Situation Type
+    predicate: is_a
+    object: Universal
+  - subject: Situation
+    predicate: instantiates
+    object: Situation Type
+  - subject: Situation
+    predicate: may_satisfy
+    object: Proposition
+  - subject: Subkind
+    predicate: is_a
+    object: Universal
+  - subject: Subkind
+    predicate: specializes
+    object: Kind
+  - subject: Substantial
+    predicate: is_a
+    object: Endurant
+  - subject: Universal
+    predicate: contrasts_with
+    object: Individual
+  - subject: Individual
+    predicate: instantiates
+    object: Universal
+  - subject: Intrinsic Moment
+    predicate: contrasts_with
+    object: Relator
+  - subject: Quality
+    predicate: contrasts_with
+    object: Mode
+  - subject: Role
+    predicate: contrasts_with
+    object: Phase
+  - subject: RoleMixin
+    predicate: contrasts_with
+    object: PhaseMixin
+  - subject: Moment
+    predicate: contrasts_with
+    object: Substantial
+  - subject: Endurant
+    predicate: contrasts_with
+    object: Perdurant
+  usage_notes:
+  - Prefer canonical terms exactly as listed.
+  - Distinguish carefully between Individual and Universal.
+  - Distinguish carefully between Endurant and Perdurant.
+  - Distinguish carefully between Substantial and Moment.
+  - Distinguish carefully between Intrinsic Moment and Relator.
+  - Distinguish carefully between Mode and Quality.
+  - Distinguish carefully between Role and Phase.
+  - Distinguish carefully between Situation, Situation Type, and Proposition.
+  - Use Scene for a temporally extended whole composed of situations.
+  - Use Plan Description when the emphasis is on intended action.
