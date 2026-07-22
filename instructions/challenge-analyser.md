@@ -150,7 +150,7 @@ If only one barrier is warranted:
 
 ### Plausible alternative analysis
 
-[Include only if there is a genuinely plausible alternative. Briefly explain it and why the main analysis is preferred.]
+[Briefly explain the alternative analysis and why the main analysis is preferred.]
 
 ---
 
